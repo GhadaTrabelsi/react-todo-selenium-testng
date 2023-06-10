@@ -26,29 +26,7 @@ public class BasePage {
 		prop.load(fis);
 	}
 
-	/*public static void initialization(String browser) {
-
-		if (browser.equalsIgnoreCase("chrome")) {
-
-			ChromeOptions chromeOptions = new ChromeOptions();
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver(chromeOptions);
-
-		} else if (browser.equalsIgnoreCase("firefox")) {
-
-			FirefoxProfile profile = new FirefoxProfile();
-			FirefoxOptions firefoxOptions = new FirefoxOptions();
-			WebDriverManager.firefoxdriver().setup();
-			firefoxOptions.setCapability("platform", Platform.WIN10);
-			firefoxOptions.setProfile(profile);
-			driver = new FirefoxDriver();
-
-		} else if (browser.equalsIgnoreCase("edge")) {
-
-			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
-		}
-	}*/
+	
 	public static void initialization(String browser) {
 	    if (browser.equalsIgnoreCase("chrome")) {
 	        ChromeOptions chromeOptions = new ChromeOptions();
