@@ -32,15 +32,7 @@ public class RemoveTodo extends Setup {
 		utils.click(TodoPage.removeBTN);
 		String pagesource = todoPage.getPageSource();
 	     Assert.assertFalse(pagesource.contains(prop.getProperty("todo1")));
-       // String pagesource =utils.getPageSource();
-    // Assert.assertFalse(pagesource.contains(prop.getProperty("todo1")));
-
-    //utils.assertFalse(pagesource.contains(prop.getProperty("todo1")));
-	    // Assert.assertFalse(pagesource.contains(prop.getProperty("todo1")));
-	 
-	 //String pagesource = todo.getPageSource();
-	// Assert.assertFalse(pagesource.contains(prop.getProperty("todo1")));
-	 System.out.println("removed");
+      
 	 }
  }
  
